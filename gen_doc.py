@@ -81,7 +81,7 @@ st.info("**DESCRIPTION DE L'APPLICATION**"
         "\n - Cette application permet de générer un rapport de visite sous un format Word à partir d'un modèle et d'un fichier Excel."
         "\n - Le fichier Excel est extrait d'Assoconnect et contient les informations de la structure (association) pour remplir le modèle.\n"
         "\n - Le fichier Word généré est personnalisé avec les informations de la structure.\n"
-        "\n - le nom du fichier généré est composé du Code de la structure + CRV + Date de la dernière visite.\n"
+        "\n - Le nom du fichier généré est composé du Code de la structure + CRV + Date de la dernière visite.\n"
     )
 
 # Téléchargement du fichier Excel
