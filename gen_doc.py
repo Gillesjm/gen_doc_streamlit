@@ -25,7 +25,7 @@ def generate_docx_files(template_path, df):
                         run = paragraph.add_run(part)
                         if i < len(inline_text) - 1:
                             inserted_text = str(df.at[0, column])
-                            inserted_text = "non renseigné" if inserted_text == "nan" else inserted_text
+                            inserted_text = "-" if inserted_text == "nan" else inserted_text
                             formatted_run = paragraph.add_run(inserted_text)
                             formatted_run.bold = True
                             formatted_run.font.color.rgb = RGBColor(128, 0, 128)
@@ -43,11 +43,11 @@ def generate_docx_files(template_path, df):
                                 cell_run = cell.paragraphs[0].add_run(part)
                                 if i < len(cell_parts) - 1:
                                     inserted_text = str(df.at[0, column])
-                                    inserted_text = "non renseigné" if inserted_text == "nan" else inserted_text
+                                    inserted_text = "-" if inserted_text == "nan" else inserted_text
                                     formatted_run = cell.paragraphs[0].add_run(inserted_text)
                                     formatted_run.bold = True
                                     formatted_run.font.color.rgb = RGBColor(128, 0, 128)
-                                    
+                                   
         
 
         # Création du fichier Word en mémoire
