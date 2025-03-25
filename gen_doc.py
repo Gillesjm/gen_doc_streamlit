@@ -74,7 +74,7 @@ def generate_docx_files(template_path, df):
 
 # Interface Streamlit
 st.title(":blue[GEN_DOC-📄]")
-st.caption("by **Gilles G.**", unsafe_allow_html=False)
+#st.caption("by **Gilles G.**", unsafe_allow_html=False)
 # description
 # présentation de l'algorithme
 st.info("**DESCRIPTION DE L'APPLICATION**"
